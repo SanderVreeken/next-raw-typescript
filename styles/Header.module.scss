@@ -1,0 +1,23 @@
+.header {
+  align-items: center;
+  //   background: red;
+  display: flex;
+  height: 74px;
+  justify-content: space-between;
+  padding: 0 1.8rem;
+  width: 100%;
+
+  span {
+    display: flex;
+  }
+
+  span[role="trailing"] {
+    p {
+      margin-right: 2rem;
+    }
+
+    svg {
+      margin-left: 0.6rem;
+    }
+  }
+}

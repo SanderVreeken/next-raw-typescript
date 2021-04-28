@@ -1,0 +1,39 @@
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    color: white;
+  }
+
+  span[role="trailing"] {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      align-items: center;
+      justify-content: flex-end;
+
+      svg {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
+
+.footer__body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+
+  span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+    width: 100%;
+  }
+}
