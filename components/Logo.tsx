@@ -10,7 +10,7 @@ export default function Logo({ light = true }: Props) {
         return (
             <div style={{
                 height: '70px',
-                backgroundImage: light ? "url('assets/logo-light.jpg')" : "url('assets/logo-dark.jpg')",
+                backgroundImage: light ? "url('assets/logo-light.png')" : "url('assets/logo-dark.jpg')",
                 width: '342px'
             }}></div>
         )
