@@ -14,7 +14,7 @@ export default function Product({ product }: Props) {
             <ul>
                 {product.items.map(item => <li>{item}</li>)}
             </ul>
-            <Button title='Read More' />
+            <Button title='Learn More' />
         </span>
     )
 }

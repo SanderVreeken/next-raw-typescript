@@ -3,6 +3,7 @@ import { MdLanguage, MdMailOutline, MdStayPrimaryPortrait } from 'react-icons/md
 import styles from '../styles/Header.module.scss'
 import Logo from './Logo'
 
+// TODO: Locked for scrolling.
 export default function Header() {
     // TODO: Could be moved to seperate file in case changed to dicts.
     const icons = [<MdStayPrimaryPortrait />, <MdMailOutline />, <MdLanguage />]

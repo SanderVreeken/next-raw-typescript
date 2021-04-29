@@ -1,8 +1,9 @@
 .product {
-  border-right: 1px solid #e6ecf0;
+  border-right: 1px solid #2e75b5;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.8fr 1.5fr 4fr 0.4fr;
+  line-height: 2rem;
   padding: 1.6rem 0.4rem;
 }
 

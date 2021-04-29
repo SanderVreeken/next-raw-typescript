@@ -17,8 +17,8 @@ p {
   color: #1d2d35;
   padding: 0;
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 button {
@@ -39,7 +39,8 @@ footer {
   color: #2e75b5;
 }
 
+// Reguest by Guy, line spacing increased as well.
 li,
 p {
-  font-size: 14px;
+  font-size: 15px;
 }

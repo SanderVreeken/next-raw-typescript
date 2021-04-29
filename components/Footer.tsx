@@ -32,6 +32,7 @@ export default function Footer() {
                     </span>
                 </span>
                 <p>Chamber of Commerce no. 70219095, licensed in Breda, The Netherlands</p>
+                <p>Copyright Revenue At Work, 2021</p>
                 <p>Website maintainted by <Link href='https://www.linkedin.com/in/sandervreeken/'>Sander Vreeken</Link></p>
             </span>
         </footer>
