@@ -11,15 +11,17 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <span role='leading'>
-                <Logo />
-            </span>
-            <span role='trailing'>
-                <span>
-                    {titles.map(title => <p>{title}</p>)}
+            <span>
+                <span role='leading'>
+                    <Logo />
                 </span>
-                <span>
-                    {icons.map(icon => icon)}
+                <span role='trailing'>
+                    <span>
+                        {titles.map(title => <p>{title}</p>)}
+                    </span>
+                    <span>
+                        {icons.map(icon => icon)}
+                    </span>
                 </span>
             </span>
         </header>
