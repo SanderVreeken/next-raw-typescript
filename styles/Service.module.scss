@@ -1,0 +1,14 @@
+.serice {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  div[role="image"] {
+    background-image: url("../public/assets/skyline-amsterdam.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 314px;
+    width: 100%;
+  }
+}

@@ -1,5 +1,4 @@
 import styles from '../styles/Logo.module.scss'
-import Image from 'next/image'
 
 interface Props {
     light?: boolean
