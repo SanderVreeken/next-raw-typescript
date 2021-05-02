@@ -1,0 +1,14 @@
+@mixin logo($color) {
+  g[id="graph"],
+  path[id="subtitle"],
+  path[id="title"],
+  rect[id="standard-1"] {
+    fill: $color;
+  }
+
+  circle[id="circle"],
+  line[id="standard-2"],
+  rect[id="screen"] {
+    stroke: $color;
+  }
+}

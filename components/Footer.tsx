@@ -18,7 +18,7 @@ export default function Footer() {
             <span className={styles.footer__body}>
                 <span>
                     <span role='leading'>
-                        <Logo light={false} />
+                        <Logo />
                     </span>
                     <span role='trailing'>
                         {contacts.map(contact => (

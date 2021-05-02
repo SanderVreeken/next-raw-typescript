@@ -21,7 +21,6 @@ export default function Header() {
         href: '/contact',
         title: 'Contact'
     }]
-    const titles = ['Services', 'About Us', 'Blog', 'Contact']
 
     return (
         <header className={styles.header}>

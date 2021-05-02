@@ -1,10 +1,20 @@
+@import "./styles/mixins/Logo";
+
+$hover-logo-color: #323232;
+$main-logo-color: #6e6e6e;
+
 .header {
   background-color: white;
   display: flex;
-  height: 74px;
+  height: 90px;
   justify-content: center;
   padding: 0 1.8rem;
   width: 100%;
+  @include logo($main-logo-color);
+
+  span[id="logo"]:hover {
+    @include logo($hover-logo-color);
+  }
 
   span {
     align-items: center;
