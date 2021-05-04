@@ -1,5 +1,7 @@
+import products from '../elements/products'
 import ProductI from '../interfaces/Product'
 import styles from '../styles/Product.module.scss'
+import Anchor from './Anchor'
 import Button from './Button'
 
 interface Props {
@@ -14,7 +16,9 @@ export default function Product({ product }: Props) {
             <ul>
                 {product.items.map(item => <li>{item}</li>)}
             </ul>
-            <Button title='Learn More' />
+            <Anchor href={product.href}>
+                <Button title='Learn More' />
+            </Anchor>
         </span>
     )
 }

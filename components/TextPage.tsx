@@ -1,19 +1,21 @@
-import Head from 'next/head'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Introduction from '../components/Introduction'
-import Products from '../components/Products'
-import styles from '../styles/Home.module.scss'
+import Text from '../components/Text'
+import TextI from '../interfaces/Text'
+import styles from '../styles/TextPage.module.scss'
 
-export default function Home() {
+interface Props {
+    text: TextI
+}
+
+export default function TextPage({ text }: Props) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <Header />
         <Hero />
-        <Introduction />
-        <Products />
+        <Text text={text} />
       </main>
 
       <Footer />

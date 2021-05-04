@@ -1,8 +1,9 @@
 interface TextI {
     title: string
     paragraphs: {
+        list?: string[]
         subtitle?: string
-        text: string[]
+        text?: string[]
     }[]
 }
 

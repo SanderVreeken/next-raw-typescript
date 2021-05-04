@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/Introduction.module.scss'
+import Graph from './Graph'
 
 export default function Introduction() {
     const paragraphs = [
@@ -14,7 +15,8 @@ export default function Introduction() {
                 <span>
                     {paragraphs.map(text => <p>{text}</p>)}
                 </span>
-                <Image height={536} src='/assets/graphs.jpg' width={565} />
+                {/* <Graph /> */}
+                {/* <Image height={536} src='/assets/graphs.jpg' width={565} /> */}
             </span>
         </span>
     )

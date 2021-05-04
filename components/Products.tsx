@@ -5,7 +5,10 @@ import Product from './Product'
 export default function Products() {
     return (
         <span className={styles.products}>
-            {products.map(product => <Product product={product} />)}
+            <h1>Our Services</h1>
+            <span>
+                {products.map(product => <Product product={product} />)}    
+            </span>
         </span>
     )
 }

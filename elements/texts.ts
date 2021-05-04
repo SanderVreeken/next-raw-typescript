@@ -12,3 +12,37 @@ export const aboutText = {
     }]
 }
 
+export const consultingText = {
+    title: 'Revenue Management Consulting',
+    paragraphs: [{
+        text: ['Is your hotel experiencing specific difficulties with optimizing revenues, bottom line profits or gaining market share? Or prefer to have a thorough analysis of the entire revenue generating process? Our experts can offer a complete overview based upon extensive internal & external research that is translated into actionable recommendations that can increase the hotel revenue performance, bottom line profits and market share.']
+    }, {
+        text: ['The internal Revenue Management analysis includes a revenue performance analysis based on relevant KPI’s and comprehends RM principles such as pricing and product offerings, segmentation, distribution strategy and content, demand calendar, reputation management, systems, lead generation, forecasting, budgeting, etc. Additionally, an internal organizational analysis can be created that demonstrates how revenue management and its processes are embedded into your organization and how this can be improved in order to increase performance. '],
+    }, {
+        text: ['The external Revenue Management analysis includes a detailed overview of the local performance in the area, creating / updating the hotels competitive set, competitor analysis, benchmarking, trends and changes in the marketplace, etc.'],
+    }, {
+        text: ['All internal and external information is summarized and translated into actionable recommendations that can increase the hotel revenue performance, bottom line profits and market share.'],
+    }]
+}
+
+export const interimText = {
+    title: 'Interim Revenue Management',
+    paragraphs: [{
+        text: ['Having difficulties to fill your vacancy short term? Revenue at work can deliver RM experts to cover the RM tasks & activities for a specific period of time so your organizations’ internal revenue management process is not left undone and to ensure you are not missing out on revenue opportunities. Through this program, our RM experts can, based on the needs of your organization']
+    }, {
+        list: ['Take over the daily and weekly reporting', 'Manage the pricing & distribution strategy', 'Set up a weekly commercial / revenue meetings', 'Perform a month end analysis', 'Benchmarking', 'Create a monthly forecast', 'Assist in the budgeting process']
+    }]
+}
+
+export const outsourcedText = {
+    title: 'Outsourced Revenue Management',
+    paragraphs: [{
+        text: ['Is your hotel experiencing specific difficulties with optimizing revenues, bottom line profits or gaining market share? Through our outsourced revenue management program you can hire RM experts that hit the ground running. Based on the needs of your organization, our experts can:']
+    }, {
+        list: ['Take over the daily and weekly reporting', 'Manage the pricing & distribution strategy', 'Set up a weekly commercial / revenue meetings', 'Perform a month end analysis', 'Benchmarking', 'Create a monthly forecast', 'Assist in the budgeting process']
+    }, {
+        text: ['In addition, our experts can offer recommendations and implement changes based upon extensive internal & external research that includes a revenue performance analysis based on relevant KPI’s and comprehends RM principles such as pricing and product offerings, segmentation, distribution strategy and content, demand calendar, reputation management, systems, lead generation, forecasting, budgeting, creating / updating the hotels competitive set, competitor analysis, benchmarking, trends and changes in the marketplace, etc.'],
+    }]
+}
+
+

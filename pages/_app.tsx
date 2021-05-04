@@ -2,9 +2,18 @@ import '../styles/globals.scss'
 
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <link rel="icon" href="/logo.ico" />
+        <title>Revenue at Work</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for

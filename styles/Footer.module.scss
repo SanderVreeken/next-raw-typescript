@@ -16,6 +16,7 @@ $main-logo-color: white;
   span[role="trailing"] {
     display: flex;
     flex-direction: column;
+    // justify-content: flex-start;
 
     span {
       align-items: center;
