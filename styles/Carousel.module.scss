@@ -12,6 +12,7 @@
   //   display: flex;
   //   flex-direction: column;
   height: 570px;
+  max-width: 100vw;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -74,17 +75,17 @@
 
 @media only screen and (max-width: 750px) {
   .carousel {
-    height: 630px;
+    height: 650px;
 
     > span {
-      height: 630px;
+      height: 650px;
       > span {
-        min-height: 630px;
+        min-height: 650px;
       }
     }
 
     span[role="arrows"] {
-      top: 335px;
+      top: 355px;
     }
 
     span[role="navigation"] {

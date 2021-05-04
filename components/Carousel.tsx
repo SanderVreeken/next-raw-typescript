@@ -60,7 +60,7 @@ export default function Carousel({ slides }: Props) {
                 </IconContext.Provider>
             </span>
             <span role='navigation'>
-                {slides.map((slide, index) => (
+                {slides.map((_, index) => (
                     <div style={{
                         backgroundColor: index === slideIndex ? '#2e75b5' : 'white'
                     }}></div> 
