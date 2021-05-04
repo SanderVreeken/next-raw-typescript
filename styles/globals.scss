@@ -44,7 +44,7 @@ footer {
   color: #2e75b5;
 }
 
-// Reguest by Guy, line spacing increased as well.
+// Requested by Guy, line spacing increased as well.
 li,
 p {
   font-size: 15px;
@@ -53,4 +53,11 @@ p {
 
 main {
   min-height: 100vh;
+}
+
+@media only screen and (max-width: 750px) {
+  li,
+  p {
+    font-size: 14px;
+  }
 }

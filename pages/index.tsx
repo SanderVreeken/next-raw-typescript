@@ -15,7 +15,7 @@ export default function Home() {
         <Introduction />
         <Products />
       </main>
-
+      
       <Footer />
     </div>
   )

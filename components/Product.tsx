@@ -11,11 +11,13 @@ interface Props {
 export default function Product({ product }: Props) {
     return (
         <span className={styles.product}>
-            <h4>{product.title}</h4>
-            <p>{product.description}</p>
-            <ul>
-                {product.items.map(item => <li>{item}</li>)}
-            </ul>
+            <span>
+                <h4>{product.title}</h4>
+                <p>{product.description}</p>
+                <ul>
+                    {product.items.map(item => <li>{item}</li>)}
+                </ul>
+            </span>
             <Anchor href={product.href}>
                 <Button title='Learn More' />
             </Anchor>

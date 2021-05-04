@@ -3,14 +3,29 @@
   border: 1px solid #e6ecf0;
   border-radius: 8px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 1.5fr 3.6fr 0.4fr;
-  // line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 2rem;
   padding: 1.6rem 0.6rem;
+
+  span {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.5fr 3.6fr;
+  }
 
   h4 {
     text-align: center;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .product {
+    border: 0;
+    box-shadow: none;
+    flex-direction: column;
+    // padding: 0 2rem;
   }
 }

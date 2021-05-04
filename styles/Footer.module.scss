@@ -43,3 +43,32 @@ $main-logo-color: white;
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer__body {
+    text-align: center;
+    > span {
+      display: flex;
+      flex-direction: column;
+    }
+
+    span[role="leading"],
+    span[role="trailing"] {
+      justify-content: center;
+
+      span[id="logo"] {
+        width: 312.5px;
+      }
+
+      span {
+        justify-content: center;
+      }
+    }
+  }
+}

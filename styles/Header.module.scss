@@ -46,7 +46,26 @@ $main-logo-color: #6e6e6e;
     }
 
     svg {
+      color: #6e6e6e;
+      height: 18px;
       margin-left: 0.6rem;
+      width: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header {
+    padding: 0 0.6rem;
+
+    span[id="logo"] {
+      width: 312.5px;
+    }
+
+    span[role="trailing"] {
+      > span:first-child {
+        display: none;
+      }
     }
   }
 }

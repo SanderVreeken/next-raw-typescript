@@ -1,0 +1,112 @@
+.animationLeft {
+  animation: move-left 1s;
+}
+
+.animationRight {
+  animation: move-right 1s;
+}
+
+.carousel {
+  //   border: 1px solid #e6ecf0;
+  border-radius: 5px;
+  //   display: flex;
+  //   flex-direction: column;
+  height: 570px;
+  //   overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  div {
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+
+  > span {
+    height: 570px;
+    transform: translateX(-100%);
+    width: 100%;
+    > span {
+      min-height: 570px;
+      min-width: 100%;
+    }
+  }
+
+  span {
+    display: flex;
+  }
+
+  span[role="arrows"] {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    left: 100vw;
+    padding: 0 0.2rem;
+    position: absolute;
+    top: 295px;
+  }
+
+  span[role="main"] {
+    display: grid;
+  }
+
+  span[role="navigation"] {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    left: 100vw;
+    // padding: 0 1rem;
+    position: absolute;
+    top: 550px;
+
+    > div {
+      border: 1px solid #2e75b5;
+      height: 5px;
+      margin: 0 2px;
+      width: 32px;
+    }
+  }
+
+  svg {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .carousel {
+    height: 630px;
+
+    > span {
+      height: 630px;
+      > span {
+        min-height: 630px;
+      }
+    }
+
+    span[role="arrows"] {
+      top: 335px;
+    }
+
+    span[role="navigation"] {
+      top: 630px;
+    }
+  }
+}
+
+@keyframes move-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}

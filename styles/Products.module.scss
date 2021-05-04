@@ -5,6 +5,10 @@
   max-width: 1100px;
   width: 100%;
 
+  div[role="carousel"] {
+    display: none;
+  }
+
   h1 {
     margin-bottom: 0.4rem;
   }
@@ -14,5 +18,21 @@
     gap: 0.4rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .products {
+    div[role="carousel"] {
+      display: grid;
+    }
+
+    h1 {
+      padding-left: 1rem;
+    }
+
+    > span {
+      display: none;
+    }
   }
 }
