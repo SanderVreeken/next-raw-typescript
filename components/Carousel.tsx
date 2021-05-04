@@ -48,12 +48,12 @@ export default function Carousel({ slides }: Props) {
                 </span>
             </span>
             <span role='arrows'>
-                <IconContext.Provider value={{ color: 'black', size: '36px' }}>
+                <IconContext.Provider value={{ color: '#6e6e6e', size: '36px' }}>
                     <div onClick={() => startStopAnimation('left')}>
                         <BsChevronLeft />   
                     </div>
                 </IconContext.Provider>
-                <IconContext.Provider value={{ color: 'black', size: '36px' }}>
+                <IconContext.Provider value={{ color: '#6e6e6e', size: '36px' }}>
                 <div onClick={() => startStopAnimation('right')}>
                         <BsChevronRight />   
                     </div>
