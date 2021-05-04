@@ -63,9 +63,7 @@ $main-logo-color: #6e6e6e;
     }
 
     span[role="trailing"] {
-      > span:first-child {
-        display: none;
-      }
+      display: none;
     }
   }
 }
