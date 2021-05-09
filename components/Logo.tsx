@@ -1,3 +1,4 @@
+// TODO: Set subtitle equal the title of the logo.
 export default function Logo() {
     return (
         <span id='logo'>

@@ -31,6 +31,7 @@ export default function Footer() {
                         ))}
                     </span>
                 </span>
+                {/* TODO: Smaller font than the regular. */}
                 <p>Chamber of Commerce no. 70219095, licensed in Breda, The Netherlands</p>
                 <p>Copyright Revenue at Work © 2021</p>
                 <p>Website maintainted by <Link href='https://www.linkedin.com/in/sandervreeken/'>Sander Vreeken</Link></p>
