@@ -56,7 +56,11 @@ export default function Contact() {
       <main className={styles.main}>
         <Header />
         <Hero />
-        <Form fields={fields} />
+        <span>
+            <h2>Contact Us</h2>
+            <p>Interested in one of our services and want to know more? Feel free to get in touch with us via <a href='mailto:info@revenueatwork.com'>e-mail</a>, <a href='tel:+31612480089'>phone</a> or via the form below.</p>
+            <Form fields={fields} />
+        </span>
       </main>
 
       <Footer />
