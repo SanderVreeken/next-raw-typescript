@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Introduction.module.scss'
 
 export default function Introduction() {

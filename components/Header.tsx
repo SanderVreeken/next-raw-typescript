@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import { MdLanguage, MdMailOutline, MdStayPrimaryPortrait } from 'react-icons/md'
 
 import styles from '../styles/Header.module.scss'
