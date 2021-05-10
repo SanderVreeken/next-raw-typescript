@@ -1,4 +1,4 @@
-import ServiceT from "../types/Service";
+import ServiceT from '../types/Service';
 
 interface MessageI {
     company?: string
