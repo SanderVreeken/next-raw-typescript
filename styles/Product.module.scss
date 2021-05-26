@@ -23,25 +23,14 @@
 
 @media only screen and (max-width: 750px) {
   .product {
-    border: 0;
-    box-shadow: none;
-    flex-direction: column;
-    padding: 2rem 0;
-
-    button {
-      border-radius: 0;
-      border-width: 2px 0;
-    }
-
-    p {
-      padding: 0 0.6rem;
-      text-align: left;
-    }
+    text-align: center;
 
     span {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 34px 132px 1fr;
+      grid-template-rows: 34px 116px;
+    }
+
+    ul {
+      display: none;
     }
   }
 }

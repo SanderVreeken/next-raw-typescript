@@ -11,13 +11,22 @@
     margin-bottom: 0.6rem;
   }
 
+  h3 {
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  main {
+    align-items: flex-start;
+  }
+
   p {
     margin-bottom: 1rem;
   }
 
   span {
     max-width: 1100px;
-    padding: 48px 0.6rem;
+    padding: 20px 0.6rem;
     width: 100%;
   }
 }

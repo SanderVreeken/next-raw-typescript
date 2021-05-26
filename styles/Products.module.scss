@@ -13,6 +13,10 @@
     margin-bottom: 0.4rem;
   }
 
+  > h3 {
+    margin-bottom: 0.8rem;
+  }
+
   > span {
     display: grid;
     gap: 0.4rem;
@@ -23,16 +27,11 @@
 
 @media only screen and (max-width: 750px) {
   .products {
-    div[role="carousel"] {
-      display: grid;
-    }
-
-    h1 {
-      padding-left: 1rem;
-    }
+    padding: 1rem;
 
     > span {
-      display: none;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
     }
   }
 }

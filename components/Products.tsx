@@ -1,6 +1,5 @@
 import products from '../elements/products'
 import styles from '../styles/Products.module.scss'
-import Carousel from './Carousel'
 import Product from './Product'
 
 export default function Products() {
@@ -10,7 +9,6 @@ export default function Products() {
             <span>
                 {products.map(product => <Product product={product} />)}    
             </span>
-            <Carousel slides={products.map(product => <Product product={product} /> )}/>
         </span>
     )
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Footer from '../components/Footer'
 import Form from '../components/Form'
 import Header from '../components/Header'
@@ -55,6 +55,7 @@ const fields = [{
 }]
 
 export default function Contact() {
+    const [response, setResponse] = useState(null)
     const [values, setValues] = useState<MessageI>({
         service: 'consulting'
     })
@@ -69,15 +70,28 @@ export default function Contact() {
     const onClick = async (event: MouseEvent) => {
         event.preventDefault()
         try {
-            const response = await createMessage(CREATE_MESSAGE_QUERY, { message: values })
-            if (response) {
-                console.log('Succesfully sent the message!')
+            const backendResponse = await createMessage(CREATE_MESSAGE_QUERY, { message: values })
+            if (backendResponse) {
+                // TODO: Ensure the user receives a positive response.
+                setResponse(true)
             }
         } catch(error) {
-            console.log(error.response.errors[0].message)
+            setResponse(error.response.errors[0].message)
         }
+    }
 
-
+    const renderResponse = () => {
+        if (response === null) {
+            return null
+        } else if (typeof response === 'string') {
+            return <h3 style={{
+                color: 'red'
+            }}>{response}</h3>
+        } else {
+            return <h3 style={{
+                color: 'green'
+            }}>{'Message sent succesfully!'}</h3>
+        }
     }
 
     return (
@@ -85,6 +99,7 @@ export default function Contact() {
             <main className={styles.main}>
                 <Header />
                 <Hero />
+                {renderResponse()}
                 <span>
                     <h2>Contact Us</h2>
                     <p>Interested in one of our services and want to know more? Feel free to get in touch with us via <a href='mailto:info@revenueatwork.com'>e-mail</a>, <a href='tel:+31612480089'>phone</a> or via the form below.</p>
