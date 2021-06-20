@@ -20,11 +20,11 @@
     align-items: flex-start;
   }
 
-  p {
+  > p {
     margin-bottom: 1rem;
   }
 
-  span {
+  > span {
     max-width: 1100px;
     padding: 20px 0.6rem;
     width: 100%;

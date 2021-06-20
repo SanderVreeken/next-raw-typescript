@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 1rem 0;
+  width: 100%;
+
+  button {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    width: fit-content;
+  }
+
+  p {
+    display: -webkit-box;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  span {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
