@@ -1,7 +1,10 @@
-import { MdLanguage, MdMailOutline, MdStayPrimaryPortrait } from 'react-icons/md'
+import { useState } from 'react'
+import { MdClear, MdLanguage, MdMailOutline, MdMenu, MdStayPrimaryPortrait } from 'react-icons/md'
+import products from '../elements/products'
 
 import styles from '../styles/Header.module.scss'
 import Anchor from './Anchor'
+import Icon from './Icon'
 import Logo from './Logo'
 
 // TODO: Could be moved to seperate file in case changed to dicts.
@@ -32,15 +35,25 @@ const links = [{
 
 // TODO: Locked for scrolling.
 export default function Header() {
+    const [isDropdown, setIsDropdown] = useState(false)
+    const [isMenu, setIsMenu] = useState(false)
+
     return (
         <header className={styles.header}>
             <span>
-                <span role='leading'>
+                <span className={styles['leading--desktop']}>
                     <Anchor href='/'>
                         <Logo />
+                        {/* <Icon /> */}
                     </Anchor>
-                </span>
-                <span role='trailing'>
+                </span> 
+                <span className={styles['leading--mobile']}>
+                    <Anchor href='/'>
+                        {/* <Logo /> */}
+                        <Icon />
+                    </Anchor>
+                </span> 
+                <span className={styles['trailing--desktop']}>
                     <span>
                         {links.map(link => (
                             <Anchor href={link.href}>
@@ -56,6 +69,18 @@ export default function Header() {
                         ))}
                     </span>
                 </span>
+                <span className={`${styles['trailing--mobile']}`} onClick={() => setIsMenu(!isMenu)}>
+                    {isMenu ? <MdClear /> : <MdMenu />}
+                </span>
+                {isMenu && (
+                    <span className={styles.header__options}>
+                        {links.map(link => (
+                            <Anchor href={link.href}>
+                                <p>{link.title}</p>
+                            </Anchor>
+                        ))}
+                    </span> 
+                )}
             </span>
         </header>
     )

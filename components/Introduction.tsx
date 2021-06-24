@@ -13,7 +13,6 @@ export default function Introduction() {
                 <span>
                     {paragraphs.map(text => <p>{text}</p>)}
                 </span>
-                {/* <Image height={536} src='/assets/graphs.jpg' width={565} /> */}
             </span>
         </span>
     )

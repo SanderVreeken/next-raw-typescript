@@ -11,8 +11,9 @@
 
   span {
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 34px 162px 1fr;
+    grid-template-rows: repeat(3, min-content);
   }
 
   h4 {

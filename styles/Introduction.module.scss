@@ -2,17 +2,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 1rem;
   width: 100%;
-
-  div[role="image"] {
-    background-image: url("../public/assets/graphs.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    width: 600px;
-  }
 
   p {
     padding: 1rem 0;
@@ -35,6 +26,8 @@
 
 @media only screen and (max-width: 750px) {
   .introduction {
+    padding: 1rem 0;
+
     span {
       max-width: unset;
       padding: 0 0.3rem;

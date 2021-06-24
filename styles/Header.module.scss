@@ -27,7 +27,45 @@ $main-logo-color: #6e6e6e;
     width: 100%;
   }
 
-  span[role="trailing"] {
+  .header__options {
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    height: fit-content;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    width: 100%;
+
+    a {
+      cursor: pointer;
+      padding: 0.7rem;
+    }
+  }
+
+  .header__services {
+    // background-color: whitesmoke;
+    position: relative;
+
+    span {
+      background-color: yellow;
+      top: 30px;
+      display: flex;
+      height: 300px;
+      position: absolute;
+      width: fit-content;
+      z-index: 5;
+    }
+  }
+
+  .leading--mobile,
+  .trailing--mobile {
+    display: none;
+  }
+
+  .trailing--desktop {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -56,14 +94,32 @@ $main-logo-color: #6e6e6e;
 
 @media only screen and (max-width: 750px) {
   .header {
-    padding: 0 0.6rem;
+    height: 64px;
+    padding: 0 1rem;
 
-    span[id="logo"] {
-      width: 312.5px;
+    .trailing--desktop,
+    .leading--desktop {
+      display: none;
     }
 
-    span[role="trailing"] {
-      display: none;
+    .leading--mobile,
+    .trailing--mobile {
+      display: flex;
+    }
+
+    .header__options {
+      display: flex;
+    }
+
+    .trailing--mobile {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+
+      svg {
+        height: 28px;
+        width: 28px;
+      }
     }
   }
 }
