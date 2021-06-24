@@ -26,8 +26,12 @@
   .product {
     text-align: center;
 
+    a {
+      margin-top: 1rem;
+    }
+
     span {
-      grid-template-rows: 34px 116px;
+      grid-template-rows: repeat(2, min-content);
     }
 
     ul {
